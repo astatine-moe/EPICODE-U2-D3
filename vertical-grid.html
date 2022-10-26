@@ -1,0 +1,167 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- 
+            goal of this page:
+        
+            - Create a vertical grid with 12 columns
+            - Each column should be 1/12 of the viewport height
+            - Each column should have 1 row, then 2 rows, then 3 rows, with the number of rows increasing by 1 each time
+            - Each row should fill the entire width of the viewport
+            - Each row should have padding and a background color
+        
+        -->
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+            .flex {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+            }
+
+            .flex .col {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .flex .col .row {
+                flex: 1;
+                background-color: #a32e76;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                color: white;
+                margin-right: 0.5em;
+                margin-bottom: 0.5em;
+                padding: 1em;
+
+                border-radius: 0.5em;
+                border: 1px solid #6a1248;
+            }
+
+            .flex .col .row:last-child {
+                margin-bottom: 0;
+            }
+
+            .flex .col:last-child .row {
+                margin-right: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flex">
+            <div class="col">
+                <div class="row">1</div>
+            </div>
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+            </div>
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+                <div class="row">3</div>
+            </div>
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+                <div class="row">3</div>
+                <div class="row">4</div>
+            </div>
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+                <div class="row">3</div>
+                <div class="row">4</div>
+                <div class="row">5</div>
+            </div>
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+                <div class="row">3</div>
+                <div class="row">4</div>
+                <div class="row">5</div>
+                <div class="row">6</div>
+            </div>
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+                <div class="row">3</div>
+                <div class="row">4</div>
+                <div class="row">5</div>
+                <div class="row">6</div>
+                <div class="row">7</div>
+            </div>
+
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+                <div class="row">3</div>
+                <div class="row">4</div>
+                <div class="row">5</div>
+                <div class="row">6</div>
+                <div class="row">7</div>
+                <div class="row">8</div>
+            </div>
+
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+                <div class="row">3</div>
+                <div class="row">4</div>
+                <div class="row">5</div>
+                <div class="row">6</div>
+                <div class="row">7</div>
+                <div class="row">8</div>
+                <div class="row">9</div>
+            </div>
+
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+                <div class="row">3</div>
+                <div class="row">4</div>
+                <div class="row">5</div>
+                <div class="row">6</div>
+                <div class="row">7</div>
+                <div class="row">8</div>
+                <div class="row">9</div>
+                <div class="row">10</div>
+            </div>
+
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+                <div class="row">3</div>
+                <div class="row">4</div>
+                <div class="row">5</div>
+                <div class="row">6</div>
+                <div class="row">7</div>
+                <div class="row">8</div>
+                <div class="row">9</div>
+                <div class="row">10</div>
+                <div class="row">11</div>
+            </div>
+
+            <div class="col">
+                <div class="row">1</div>
+                <div class="row">2</div>
+                <div class="row">3</div>
+                <div class="row">4</div>
+                <div class="row">5</div>
+                <div class="row">6</div>
+                <div class="row">7</div>
+                <div class="row">8</div>
+                <div class="row">9</div>
+                <div class="row">10</div>
+                <div class="row">11</div>
+                <div class="row">12</div>
+            </div>
+        </div>
+    </body>
+</html>
