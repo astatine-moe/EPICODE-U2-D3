@@ -1,0 +1,76 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="global.css" />
+        <style>
+            body {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+            .nav {
+                width: 15vw;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            main header {
+                height: 15vh;
+                width: 100%;
+            }
+
+            main .flex-layout {
+                display: flex;
+                flex: 1;
+            }
+
+            main .flex-layout .container {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            main .flex-layout .container .article {
+                flex: 1;
+            }
+
+            main .flex-layout .container footer {
+                height: 10vw;
+            }
+
+            main .flex-layout .aside {
+                width: 15vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <span>Nav</span>
+        </div>
+        <main>
+            <header>
+                <span>Header</span>
+            </header>
+            <div class="flex-layout">
+                <div class="container">
+                    <div class="article">
+                        <span>Article</span>
+                    </div>
+                    <footer>
+                        <span>Footer</span>
+                    </footer>
+                </div>
+                <div class="aside">
+                    <span>Aside</span>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
