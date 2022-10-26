@@ -1,0 +1,99 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+            * {
+                font-family: "Roboto", sans-serif;
+            }
+            .component {
+                display: flex;
+                flex-direction: row;
+                height: 400px;
+                border-radius: 4em;
+                overflow: hidden;
+                border: 2px solid black;
+            }
+
+            .component .col {
+                padding: 1em;
+            }
+
+            .component .col-1 {
+                flex: 5;
+                background-color: #88b46f;
+                color: white;
+                height: 100%;
+                border-right: 2px solid black;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .component .col-2 {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                background-color: #699afc;
+                color: white;
+                font-weight: 700;
+            }
+
+            .component .col-3 {
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                line-height: calc(400px / 3);
+            }
+
+            .component .col-3 > div {
+                height: 33.3%;
+            }
+
+            .component .col-3 > div:nth-child(1) {
+                background-color: #fbf7c0;
+            }
+            .component .col-3 > div:nth-child(2) {
+                background-color: #f7ed73;
+            }
+            .component .col-3 > div:nth-child(3) {
+                background-color: #f4e43e;
+            }
+
+            p {
+                margin: 0;
+                margin-bottom: 0.5em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="component">
+            <div class="col col-1">
+                <p>First Column</p>
+                <p>Height 400px;</p>
+                <p>Green-ish background</p>
+                <p>Texty centered</p>
+            </div>
+            <div class="col col-2">
+                <p>Second Column</p>
+                <p>Text To the bottom</p>
+                <p>Bold, blueish background</p>
+            </div>
+            <div class="col-3">
+                <div><p>Third column part 1</p></div>
+                <div><p>Third column part 2</p></div>
+                <div><p>Third column part 3</p></div>
+            </div>
+        </div>
+    </body>
+</html>
